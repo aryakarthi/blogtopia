@@ -45,7 +45,6 @@ a {
   max-width: 1536px;
   margin: 0 auto;
   padding: 0 80px;
-  background-color: bisque;
 }
 
 @media screen and (max-width: 1536px) {
