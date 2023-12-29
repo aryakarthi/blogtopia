@@ -22,8 +22,9 @@ a {
 }
 
 .dark {
-  --bg: #0f172a;
-  --textColor: #ddd;
+  /* --bg: #0f172a; */
+  --bg: #191825;
+  --textColor: #fff;
   --softBg: #1f273a;
   --softTextColor: #a6a6a6;
 }
@@ -45,6 +46,26 @@ a {
   max-width: 1536px;
   margin: 0 auto;
   padding: 0 80px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media screen and (max-width: 1536px) {
