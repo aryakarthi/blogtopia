@@ -28,7 +28,7 @@ const Featured = () => {
             we want to help you share your voice with the world. Join us on our
             journey and let’s explore the world together!
           </p>
-          <button className={styles.button}>Read More</button>
+          <button className={styles.button}>Explore</button>
         </div>
       </div>
     </div>
