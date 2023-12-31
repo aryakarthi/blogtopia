@@ -8,6 +8,7 @@
 .imgContainer {
   flex: 1;
   height: 240px;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -51,8 +52,14 @@
   padding: 2px 0px;
 }
 
-@media screen and (max-width: 1280px) {
-  .imageContainer {
-    display: none;
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imgContainer,
+  .textContainer {
+    flex: auto;
   }
 }

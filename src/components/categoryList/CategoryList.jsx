@@ -7,10 +7,7 @@ const CategoryList = () => {
     <div className={styles.container}>
       <h2 className={styles.title}>Popular Categories</h2>
       <div className={styles.categories}>
-        <Link
-          href={"/blog?cat=style"}
-          className={`${styles.category} ${styles.style}`}
-        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/technology.png"}
             alt=""
@@ -20,10 +17,7 @@ const CategoryList = () => {
           />
           Technology
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}
-        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/health.png"}
             alt=""
@@ -33,9 +27,7 @@ const CategoryList = () => {
           />
           Health
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/gaming.png"}
             alt=""
@@ -45,9 +37,7 @@ const CategoryList = () => {
           />
           Gaming
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/travel.png"}
             alt=""
@@ -57,9 +47,7 @@ const CategoryList = () => {
           />
           Travel
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/sports.png"}
             alt=""
@@ -69,9 +57,7 @@ const CategoryList = () => {
           />
           Sports
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/education.png"}
             alt=""
@@ -81,9 +67,7 @@ const CategoryList = () => {
           />
           Education
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/nature.png"}
             alt=""
@@ -93,9 +77,7 @@ const CategoryList = () => {
           />
           Nature
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/fashion.png"}
             alt=""
@@ -105,9 +87,7 @@ const CategoryList = () => {
           />
           Fashion
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/photography.png"}
             alt=""
@@ -117,9 +97,7 @@ const CategoryList = () => {
           />
           Photography
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/science.png"}
             alt=""
@@ -129,9 +107,7 @@ const CategoryList = () => {
           />
           Science
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/politics.png"}
             alt=""
@@ -141,9 +117,7 @@ const CategoryList = () => {
           />
           Politics
         </Link>
-        <Link
-          href={"/blog?cat=style"}
-          className={styles.category}        >
+        <Link href={"/blog?cat=style"} className={styles.category}>
           <Image
             src={"/productivity.png"}
             alt=""

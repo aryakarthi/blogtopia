@@ -1,8 +1,7 @@
 .container {
-  margin-top: 50px;
-  padding: 30px 0px;
+  padding: 60px 0px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   color: var(--softTextColor);
 }
@@ -26,6 +25,7 @@
 
 .desc {
   font-weight: 300;
+  text-indent: 50px;
 }
 
 .icons {

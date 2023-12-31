@@ -8,13 +8,18 @@
   margin-bottom: 10px;
 }
 
+.greet {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
 .authorName {
   font-weight: bold;
   color: crimson;
 }
 
 .authorMsg {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .post {
@@ -27,6 +32,7 @@
 .imgContainer {
   flex: 1;
   min-height: 400px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -88,12 +94,26 @@
     font-size: 34px;
   }
 
-  .imgContainer {
+  /* .imgContainer {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
+  .post {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imgContainer,
+  .textContainer {
+    flex: auto;
+  }
+
+  .imgContainer {
+    min-height: 240px;
+  }
+
   .title {
     font-size: 32px;
   }

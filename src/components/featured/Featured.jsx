@@ -4,9 +4,8 @@ import Image from "next/image";
 const Featured = () => {
   return (
     <div className={styles.container}>
+      <p className={styles.greet}>Hello Everyone.!</p>
       <h1 className={styles.title}>
-        Hey!
-        <br />
         I'm <span className={styles.authorName}>aryakarthi</span>.
       </h1>
       <p className={styles.authorMsg}>
@@ -23,7 +22,8 @@ const Featured = () => {
             the world. Our goal is to create a platform where we can connect
             with people who share our interests and inspire them to learn and
             grow.
-            <br /><br />
+            <br />
+            <br />
             We believe that everyone has something valuable to contribute, and
             we want to help you share your voice with the world. Join us on our
             journey and let’s explore the world together!

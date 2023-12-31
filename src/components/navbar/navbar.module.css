@@ -11,10 +11,16 @@
   flex: 1;
 }
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .logo {
   font-size: 30px;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
   flex: 1;
 }
 

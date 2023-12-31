@@ -11,17 +11,16 @@ const Footer = () => {
           <h1 className={styles.logoText}>Blogtopia</h1>
         </div>
         <p className={styles.desc}>
-          &nbsp;&nbsp;&nbsp;Blogtopia is a home for human stories and ideas. Here, anyone can
+          Blogtopia is a home for human stories and ideas. Here, anyone can
           share insightful perspectives, useful knowledge, and life wisdom with
-          the world. <br />
-          It’s simple, beautiful, collaborative, and helps you find the right
-          audience for whatever you have to say.
+          the world. It’s simple, beautiful, collaborative, and helps you find
+          the right audience for whatever you have to say.
         </p>
         <div className={styles.icons}>
-          <Image src="/facebook.png" alt="" width={20} height={20} />
-          <Image src="/instagram.png" alt="" width={20} height={20} />
-          <Image src="/linkedin.png" alt="" width={20} height={20} />
-          <Image src="/youtube.png" alt="" width={20} height={20} />
+          <Image src="/facebook.png" alt="" width={24} height={24} />
+          <Image src="/instagram.png" alt="" width={24} height={24} />
+          <Image src="/linkedin.png" alt="" width={24} height={24} />
+          <Image src="/youtube.png" alt="" width={24} height={24} />
         </div>
       </div>
       <div className={styles.links}>
@@ -33,7 +32,7 @@ const Footer = () => {
           <Link href="/">Contact</Link>
         </div>
         <div className={styles.list}>
-          <span className={styles.listTitle}>Topics</span>
+          <span className={styles.listTitle}>Trending</span>
           <Link href="/">Technology</Link>
           <Link href="/">Fashion</Link>
           <Link href="/">Science</Link>
