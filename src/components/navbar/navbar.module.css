@@ -20,7 +20,6 @@
 .logo {
   font-size: 30px;
   font-weight: bold;
-  /* text-align: center; */
   flex: 1;
 }
 
@@ -31,6 +30,14 @@
   gap: 20px;
   font-size: 16px;
   flex: 1;
+}
+
+.link {
+  transition: all ease-in .2s;
+}
+
+.link:hover {
+  color: var(--crimson);
 }
 
 @media screen and (max-width: 1280px) {

@@ -3,6 +3,7 @@
   --textColor: black;
   --softBg: #f0f0f0;
   --softTextColor: #606060;
+  --crimson: #dc143c;
 }
 
 * {
@@ -22,7 +23,6 @@ a {
 }
 
 .dark {
-  /* --bg: #0f172a; */
   --bg: #191825;
   --textColor: #fff;
   --softBg: #1f273a;
@@ -66,6 +66,14 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.ql-container {
+  font-size: 20px !important;
+}
+
+.quill>.ql-container>.ql-editor.ql-blank::before {
+  color: #b3b3b1;
 }
 
 @media screen and (max-width: 1536px) {

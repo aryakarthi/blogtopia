@@ -1,5 +1,10 @@
 .link {
   cursor: pointer;
+  transition: all ease-in .2s;
+}
+
+.link:hover {
+  color: var(--crimson);
 }
 
 .logout {

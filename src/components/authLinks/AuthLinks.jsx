@@ -6,7 +6,7 @@ import { HiMenu } from "react-icons/hi";
 
 const AuthLinks = () => {
   const [open, setOpen] = useState();
-  const status = "unauthenticated";
+  const status = "authenticated";
   return (
     <div>
       {status === "unauthenticated" ? (
@@ -17,8 +17,8 @@ const AuthLinks = () => {
         </>
       ) : (
         <div className={styles.authLinks}>
-          <Link href="/write" className={styles.link}>
-            Write
+          <Link href="/create" className={styles.link}>
+            Create
           </Link>
           <span className={styles.link}>Logout</span>
         </div>
