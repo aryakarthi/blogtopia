@@ -8,7 +8,11 @@ import {
   MdOutlineVideocam,
 } from "react-icons/md";
 import { useState } from "react";
-import ReactQuill from "react-quill";
+
+import dynamic from 'next/dynamic';
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+
+// import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
 
 const Create = () => {
@@ -35,7 +39,7 @@ const Create = () => {
           </div>
         )}
         <ReactQuill
-        className={styles.textArea}
+          className={styles.textArea}
           theme="bubble"
           value={value}
           onChange={setValue}
