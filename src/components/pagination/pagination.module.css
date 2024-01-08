@@ -12,3 +12,8 @@
   cursor: pointer;
   border-radius: 4px;
 }
+
+.button:disabled {
+  background-color: rgba(220, 20, 60, 0.707);
+  cursor: not-allowed;
+}

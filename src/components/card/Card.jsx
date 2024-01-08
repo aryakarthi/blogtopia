@@ -2,29 +2,27 @@ import React from "react";
 import styles from "./card.module.css";
 import Image from "next/image";
 import Link from "next/link";
-const Card = () => {
+const Card = ({ key, item }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} key={key}>
       <div className={styles.imgContainer}>
+        {/* {item.img && (
+          <Image src={item.img} alt="" fill className={styles.image} />
+        )} */}
         <Image src={"/featured_img.jpg"} alt="" fill className={styles.image} />
       </div>
       <div className={styles.textContainer}>
         <div className={styles.detail}>
-          <span className={styles.date}>30-12-2023</span>
-          <span className={styles.category}>Technology</span>
+          <span className={styles.date}>{item.createdAt.substring(0, 10)}</span>
+          <span className={styles.category}>{item.catSlug}</span>
         </div>
-        <Link href={"/"}>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ea?
-          </h3>
+        <Link href={`/posts/${item.slug}`}>
+          <h3>{item.title}</h3>
         </Link>
-        <p className={styles.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          aperiam at eum odit veritatis consequuntur nihil blanditiis hic
-          excepturi corporis quidem quod aliquid consectetur corrupti numquam,
-          ipsum magnam suscipit enim!
-        </p>
-        <Link href={"/"} className={styles.link}>Read More</Link>
+        <p className={styles.desc}>{item.desc.substring(0, 60)}</p>
+        <Link href={`/posts/${item.slug}`} className={styles.link}>
+          Read More
+        </Link>
       </div>
     </div>
   );

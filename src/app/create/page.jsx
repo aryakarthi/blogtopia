@@ -9,18 +9,32 @@ import {
 } from "react-icons/md";
 import { useState } from "react";
 
-import dynamic from 'next/dynamic';
-const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+import dynamic from "next/dynamic";
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 // import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const Create = () => {
+  const { status } = useSession();
+
+  const router = useRouter();
+
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
+
+  if (status === "loading") {
+    return <div className={styles.loading}>Loading...</div>;
+  }
+  if (status === "unauthenticated") {
+    router.push("/");
+  }
+
   return (
     <div className={styles.container}>
-      <input type="text" placeholder="Title" className={styles.input} />
+      <input type="text" placeholder="Add title..." className={styles.input} />
       <div className={styles.editor}>
         <button className={styles.addFileBtn} onClick={() => setOpen(!open)}>
           <MdAdd className={styles.addFileIcon} />
@@ -43,7 +57,7 @@ const Create = () => {
           theme="bubble"
           value={value}
           onChange={setValue}
-          placeholder="Write your blog here.."
+          placeholder="Write your blog here..."
         />
       </div>
       <button className={styles.publish}>Publish</button>
