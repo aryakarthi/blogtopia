@@ -4,10 +4,15 @@
   flex-direction: column;
 }
 
+.selectContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 10px;
+}
+
 .select {
-  margin-bottom: 50px;
-  padding: 10px 20px;
-  margin-left: 50px;
+  padding: 6px 10px;
   width: max-content;
 }
 
@@ -38,6 +43,11 @@
   border-color: var(--crimson);
 }
 
+.addImg {
+  display: grid;
+  cursor: pointer;
+}
+
 .addFileIcon {
   font-size: 20px;
   color: var(--textColor);
@@ -58,7 +68,8 @@
   left: 64px;
 }
 
-.input {
+.input[type="text"] {
+  width: 70vw;
   padding: 10px;
   font-size: 30px;
   border: none;

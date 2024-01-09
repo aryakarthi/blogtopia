@@ -6,10 +6,10 @@ const Card = ({ key, item }) => {
   return (
     <div className={styles.container} key={key}>
       <div className={styles.imgContainer}>
-        {/* {item.img && (
+        {item.img && (
           <Image src={item.img} alt="" fill className={styles.image} />
-        )} */}
-        <Image src={"/featured_img.jpg"} alt="" fill className={styles.image} />
+        )}
+        {/* <Image src={"/featured_img.jpg"} alt="" fill className={styles.image} /> */}
       </div>
       <div className={styles.textContainer}>
         <div className={styles.detail}>
